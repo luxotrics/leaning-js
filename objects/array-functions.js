@@ -41,5 +41,16 @@ function reverseArrayInPlaceA(arr) {
 
     return arr;
 }
+var arrayLength = arrayOne.length;
 
-reverseArrayInPlaceA(arrayOne);
+function reverseArrayInPlaceB (arr, arrLength) {
+    
+    var a = 0;
+    for (var i = 0; i < arrLength; i++) {
+        arr.unshift(arr[a + 2]);
+        console.log(arr);
+
+    }
+}
+
+reverseArrayInPlaceB(arrayOne, arrayOne.length);
